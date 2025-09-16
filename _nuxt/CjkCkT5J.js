@@ -1,1 +1,0 @@
-import{_ as o,c as n,b as s,w as c,e as _,o as a,d as r}from"#entry";const d={},x={class:"box"};function i(f,t){const e=_;return a(),n("div",x,[s(e,{to:"/test"},{default:c(()=>[...t[0]||(t[0]=[r("Volta",-1)])]),_:1})])}const m=o(d,[["render",i]]);export{m as default};

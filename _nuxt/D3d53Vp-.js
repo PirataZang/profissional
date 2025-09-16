@@ -1,1 +1,0 @@
-import{_ as o,c as n,b as s,w as a,e as c,o as _,d as r}from"#entry";const d={};function l(f,t){const e=c;return _(),n("div",null,[s(e,{to:"/"},{default:a(()=>[...t[0]||(t[0]=[r("Volta",-1)])]),_:1})])}const x=o(d,[["render",l]]);export{x as default};
