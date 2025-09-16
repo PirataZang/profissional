@@ -4,8 +4,8 @@
       v-for="item in items"
       :key="item.to"
       :to="item.to"
-      class="menu-link px-4 py-2 rounded-lg text-gray-700 hover:bg-blue-950 hover:text-white transition"
-      active-class="bg-blue-950 text-white"
+      class="menu-link px-4 py-2 rounded-lg text-gray-700 hover:bg-[#0b1651] hover:text-white transition"
+      active-class="bg-[#0b1651] text-white"
       exact
     >
       {{ item.label }}
@@ -17,7 +17,5 @@
 const items = [
   { label: 'Início', to: '/' },
   { label: 'Sobre', to: '/test' },
-  { label: 'Projetos', to: '/projetos' },
-  { label: 'Currículo', to: '/curriculo' }
 ]
 </script>
