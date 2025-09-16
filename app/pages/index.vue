@@ -1,6 +1,9 @@
+<script setup lang="ts">
+</script>
+
 <template>
     <div class="box">
-        <NuxtLink to="/test">Volta</NuxtLink>
+        <Perfil />
     </div>
 </template>
 
