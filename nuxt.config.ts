@@ -1,4 +1,3 @@
-// filepath: d:\Projects\NUXT\profissional\nuxt.config.ts
 export default defineNuxtConfig({
     compatibilityDate: '2025-07-15',
     devtools: { enabled: false },
@@ -6,6 +5,12 @@ export default defineNuxtConfig({
     css: ['@/assets/styles/main.css', '@fortawesome/fontawesome-free/css/all.min.css'],
 
     app: {
-        baseURL: '/profissional/', // troque pelo nome do seu repositório
+        baseURL: '/profissional/', // nome do repo
+        // buildAssetsDir: '/_nuxt/', // deixa padrão
+        buildAssetsDir: '/', // deixa padrão
+    },
+
+    nitro: {
+        preset: 'github-pages',
     },
 })

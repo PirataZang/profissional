@@ -1,7 +1,8 @@
 <template>
     <div class="content">
         <div class="boxPerfil">
-            <img class="imagePerfil" src="../assets/images/perfil.jpg" alt="perfil" srcset="" />
+            <!-- <img class="imagePerfil" src="../assets/images/perfil.jpg" alt="perfil" srcset="" /> -->
+            <img class="imagePerfil" src="/images/perfil.jpg" alt="perfil" />
             <div class="flex flex-col informations">
                 <div class="textPerfil">
                     <p class="text-lg">Desenvolvedor fullstack pleno</p>
