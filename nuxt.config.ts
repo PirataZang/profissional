@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 export default defineNuxtConfig({
     compatibilityDate: '2025-07-15',
     devtools: { enabled: false },
@@ -6,8 +8,7 @@ export default defineNuxtConfig({
 
     app: {
         baseURL: '/profissional/', // nome do repo
-        // buildAssetsDir: '/_nuxt/', // deixa padrão
-        buildAssetsDir: '/', // deixa padrão
+        buildAssetsDir: process.env.NUXT_LOCAL === 'true' ? '/_nuxt/' : '/',
     },
 
     nitro: {
