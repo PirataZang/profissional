@@ -3,6 +3,7 @@
 
 <template>
     <div class="box">
+        <Start />
         <Perfil />
     </div>
 </template>
