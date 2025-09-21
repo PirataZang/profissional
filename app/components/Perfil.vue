@@ -3,13 +3,14 @@
         <div class="boxPerfil">
             <!-- <img class="imagePerfil" src="../assets/images/perfil.jpg" alt="perfil" srcset="" /> -->
             <img class="imagePerfil" src="/images/perfil.jpg" alt="perfil" />
-            <div class="flex flex-col informations">
+            <div class="flex flex-col items-center gap-5 informations">
                 <div class="textPerfil">
                     <p class="text-3xl">Desenvolvedor fullstack pleno</p>
                     <p class="text-lg">Tenho 22 anos e sou apaixonado por tecnologia e programação, atuando profissionalmente há 4 anos no desenvolvimento de software. Sou um programador fullstack, com sólida experiência em front-end — área em que possuo maior expertise — e domínio consistente de back-end, permitindo-me atuar de forma completa em todas as etapas de um projeto.</p>
                     <p class="text-lg">Minha principal especialidade está em frameworks modernos, como Vue.js e Nuxt.js, além de boas práticas de arquitetura, performance e experiência do usuário. Estou sempre em busca de desafios que ampliem meus conhecimentos e me permitam entregar soluções inovadoras e de alta qualidade.</p>
                     <p class="text-lg">Se você procura um profissional dedicado, proativo e comprometido com resultados, será um prazer fazer parte do seu time!</p>
                 </div>
+                <Skills />
             </div>
         </div>
     </div>
@@ -48,6 +49,7 @@ export default {
             gap: 20px;
             width: 35vw;
             text-align: justify;
+            scrollbar-width: none;
         }
 
         // tablet
@@ -84,6 +86,7 @@ export default {
                 width: 70vw;
                 height: 500px;
                 overflow-y: scroll;
+                scrollbar-width: thin;
             }
         }
     }
