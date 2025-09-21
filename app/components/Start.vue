@@ -2,11 +2,11 @@
     <div class="start flex justify-between items-center">
         <div class="startText flex flex-col p-5 text-white">
             <span class="text-3xl">Olá me chamo <b>Igor Fronza</b></span>
-            <span class="text-2xl">Desenvolvedor fullstack</span>
+            <span class="text-2xl">{{user.bio}}</span>
 
             <div class="flex gap-5 mt-5 justify-between">
                 <Button href="https://br.linkedin.com/in/igor-fronza-592796249?trk=people-guest_people_search-card" target="_blank" label="<i class='text-xl fa-brands fa-square-linkedin'></i> Linkedin" type="square" customClass="linkedIn" />
-                <Button href="https://github.com/PirataZang" target="_blank" label="<i class='text-xl fa-brands fa-github'></i> GitHub" type="square" customClass="github" />
+                <Button :href="user.html_url" target="_blank" label="<i class='text-xl fa-brands fa-github'></i> GitHub" type="square" customClass="github" />
             </div>
         </div>
         <div class="startImage">
@@ -14,6 +14,14 @@
         </div>
     </div>
 </template>
+
+
+<script setup lang="ts">
+const { getUser } = useGithub()
+const user:any = await getUser()
+
+</script>
+
 
 <style lang="scss">
 .start {

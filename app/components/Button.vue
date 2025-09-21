@@ -1,10 +1,10 @@
 <template>
     <button v-if="!href" :class="[`button`, type, (customClass || bg)]">
-        <span :class="size" v-html="label"></span>
+        <span v-html="label"></span>
     </button>
 
     <a v-else :href="href" target="_blank" :class="[`button`, type, customClass]">
-        <span :class="size" v-html="label"></span>
+        <span v-html="label"></span>
     </a>
 </template>
 
@@ -37,12 +37,7 @@ export default {
             type: String,
             default: '',
         },
-    },
-
-    size: {
-        type: String,
-        default: 'text-lg',
-    },
+    }
 }
 </script>
 
