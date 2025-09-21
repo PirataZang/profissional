@@ -1,5 +1,5 @@
 import collect from 'collect.js'
-require('dotenv').config()
+import 'dotenv/config'
 
 const GITHUB_TOKEN = process.env.NUXT_GITHUB_TOKEN //Token de acesso da API do GitHub
 
