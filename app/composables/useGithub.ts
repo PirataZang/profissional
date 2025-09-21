@@ -1,7 +1,7 @@
 import collect from 'collect.js'
-import 'dotenv/config'
 
-const GITHUB_TOKEN = process.env.NUXT_GITHUB_TOKEN //Token de acesso da API do GitHub
+const runtimeConfig = useRuntimeConfig()
+const GITHUB_TOKEN = runtimeConfig.public.GITHUB_TOKEN
 
 export const useGithub = () => {
     const headers = {
