@@ -7,8 +7,8 @@
 </template>
 
 <script setup lang="ts">
-const { getLenguages } = useGithub()
-const lenguagesPublic: any = await getLenguages()
+const { getLanguages } = useGithub()
+const lenguagesPublic: any = await getLanguages()
 
 const lenguagesList = ['SCSS', 'NuxtJs', 'Node.js', 'PostgreSQL', 'Git', 'Rest API', 'Tailwind', 'PHP', 'NestJs', 'Laravel', 'MySQL', 'PocketBase', ...lenguagesPublic]
 </script>
