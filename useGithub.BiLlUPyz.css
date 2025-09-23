@@ -1,0 +1,1 @@
+.button{box-shadow:inset 1px 3px 10px #00000025;cursor:pointer;padding:10px 15px;transition:all .3s ease;width:-moz-max-content;width:max-content}.button:hover{box-shadow:inset 1px 3px 10px #000}.button:active{transform:scale(.92)}.circle{border-radius:100px}.square{border-radius:7px}
