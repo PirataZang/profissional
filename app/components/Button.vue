@@ -44,6 +44,7 @@ export default {
 <style lang="scss">
 .button {
     width: max-content;
+    cursor: pointer;
     padding: 10px 15px;
     transition: all 0.3s ease;
     box-shadow: inset 1px 3px 10px 0px rgba(0, 0, 0, 0.144);
