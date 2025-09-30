@@ -10,6 +10,7 @@
 const items = [
     { label: 'Início', to: '/' },
     { label: 'Templates', to: '/templates' },
+    { label: 'Projetos', to: '/projects' },
 ]
 </script>
 

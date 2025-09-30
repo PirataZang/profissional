@@ -3,7 +3,7 @@
         <div class="repositoryBox" v-for="(repo, index) in reposPublic" :key="index">
             <h2 class="text-2xl font-bold mb-2">{{ repo.name }}</h2>
             <p class="mb-4">{{ repo.description }}</p>
-            <Button :href="repo.homepage" label="Visitar Projeto" type="square" customClass="customButton" />
+            <Button :href="repo.html_url" label="Visitar Projeto" type="square" customClass="customButton" />
         </div>
     </div>
 </template>
@@ -17,7 +17,7 @@ const { getRepos } = useGithub()
 let reposPublic: any = await getRepos()
 
 reposPublic = collect(reposPublic)
-    .filter((repo: any) => repo.homepage && repo.id !== 1057573306)
+    .filter((repo: any) => repo.id !== 1057573306)
     .all()
 </script>
 
