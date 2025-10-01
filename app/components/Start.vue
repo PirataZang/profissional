@@ -25,6 +25,8 @@ const user:any = await getUser()
 
 <style lang="scss">
 .start {
+    border-radius: 30px;
+    margin: 10px;
     background: linear-gradient(250deg, #210055, #000000);
     box-shadow: 0px 11px 12px 0px #00000073;
 
@@ -67,6 +69,7 @@ const user:any = await getUser()
 
     img {
         height: 800px;
+        border-radius: 30px;
         object-fit: cover;
         mask-image: linear-gradient(to left, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0) 100%);
     }
